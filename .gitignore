@@ -1,4 +1,4 @@
-*
-!src
-!.gitignore
-!pom.xml
+.idea
+dir
+target
+.DS_Store
