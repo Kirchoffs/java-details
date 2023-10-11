@@ -12,10 +12,10 @@ public class FileReaderTest {
     public static String resourcePath = projectPath + "/src/main/resources";
 
     public static void main(String[] args) throws Exception {
-        readByReader("file_contains_newline_real");
-        readByReader("file_contains_newline_fake");
-        readByInputStream("file_contains_newline_real");
-        readByInputStream("file_contains_newline_fake");
+        readByReader("file-contains-newline-real");
+        readByReader("file-contains-newline-fake");
+        readByInputStream("file-contains-newline-real");
+        readByInputStream("file-contains-newline-fake");
     }
 
     public static void readByReader(String fileName) throws Exception {
