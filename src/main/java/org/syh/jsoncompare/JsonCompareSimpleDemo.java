@@ -14,23 +14,23 @@ public class JsonCompareSimpleDemo {
 
         String pathAlpha = "json-compare/jsonAlpha.json";
         String jsonStringAlpha = new String(
-                JsonCompareSimpleDemo.class.getClassLoader().getResourceAsStream(pathAlpha).readAllBytes(),
-                StandardCharsets.UTF_8
+            JsonCompareSimpleDemo.class.getClassLoader().getResourceAsStream(pathAlpha).readAllBytes(),
+            StandardCharsets.UTF_8
         );
         JsonNode jsonAlpha = objectMapper.readTree(jsonStringAlpha);
         System.out.println(jsonAlpha);
 
         String pathBeta = "json-compare/jsonBeta.json";
         String jsonStringBeta = new String(
-                JsonCompareSimpleDemo.class.getClassLoader().getResourceAsStream(pathBeta).readAllBytes(),
-                StandardCharsets.UTF_8
+            JsonCompareSimpleDemo.class.getClassLoader().getResourceAsStream(pathBeta).readAllBytes(),
+            StandardCharsets.UTF_8
         );
         JsonNode jsonBeta = objectMapper.readTree(jsonStringBeta);
         System.out.println(jsonBeta);
 
         String[] pathsToIgnore = new String[] {
-                "$.key-5",
-                "$.key-6.key-6-2"
+            "$.key-5",
+            "$.key-6.key-6-2"
         };
         Function<Configuration, Configuration> configuration = conf -> conf.whenIgnoringPaths(pathsToIgnore);
 
