@@ -25,6 +25,7 @@
         <joda.time.version>2.12.5</joda.time.version>
         <jackson.joda.version>2.14.2</jackson.joda.version>
         <json.unit.assertj.version>2.38.0</json.unit.assertj.version>
+        <lombok.version>1.18.34</lombok.version>
     </properties>
 
     <dependencies>
@@ -83,6 +84,12 @@
             <groupId>net.javacrumbs.json-unit</groupId>
             <artifactId>json-unit-assertj</artifactId>
             <version>${json.unit.assertj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
