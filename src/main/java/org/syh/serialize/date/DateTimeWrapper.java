@@ -1,4 +1,4 @@
-package org.syh.serialize;
+package org.syh.serialize.date;
 
 import org.joda.time.DateTime;
 
